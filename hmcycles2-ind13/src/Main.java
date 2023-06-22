@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
-        task4();
+        //task1();
+        //task2();
+        //task3();
+        //task4();
         task5();
-        task6();
-        task7();
-        task8();
+        //task6();
+        //task7();
+        //task8();
 
 
     }
@@ -57,9 +57,10 @@ public class Main {
 
         int monthCount = 0;
 
-        while (sum <= goal){
+        while (sum < goal){
             sum += sum * monthPercent/100;
             monthCount++;
+
             System.out.printf("Месяц " + monthCount + " сумма накоплений равна " + sum + " рублей");
         }
         System.out.println("Итоговая сумма: " + sum + ". Потребовалось месяцев: " + monthCount);
@@ -72,11 +73,11 @@ public class Main {
 
         int monthCount = 0;
 
-        while (sum <=goal){
+        while (sum <goal){
             sum += sum * monthPercent /100;
             monthCount++;
             if (monthCount % 6== 0){
-                System.out.println("Месяц" + monthCount + "сумма накоплений равна" + sum + "рублей");
+                System.out.println("Месяц " + monthCount + "сумма накоплений равна" + sum + "рублей");
             }
         }
         System.out.println("Итоговая сумма: " + sum + ". Потребовалось месяцев: " + monthCount);
